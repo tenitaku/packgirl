@@ -45,18 +45,18 @@
   </div>
 
   <script>
-    document.addEventListener('keydown', function(event) {
-      var pacman = document.querySelector('.pacman');
-      var currentPosition = parseInt(pacman.style.left) || 0;
+  document.addEventListener('keydown', function(event) {
+    var pacman = document.querySelector('.pacman');
+    var currentPosition = parseInt(pacman.style.left) || 0;
 
-      if (event.key === 'ArrowRight') {
-        pacman.style.left = (currentPosition + 20) + 'px';
-      } else if (event.key === 'ArrowLeft') {
-        pacman.style.left = (currentPosition - 20) + 'px';
-      } else if (event.key === ' ') {
-        pacman.classList.toggle('open');
-      }
-    });
-  </script>
+    if (event.key === 'ArrowRight') {
+      pacman.style.left = (currentPosition + 20) + 'px';
+    } else if (event.key === 'ArrowLeft') {
+      pacman.style.left = (currentPosition - 20) + 'px';
+    } else if (event.key === ' ') {
+      pacman.classList.toggle('open');
+    }
+  });
+</script>
 </body>
 </html>
